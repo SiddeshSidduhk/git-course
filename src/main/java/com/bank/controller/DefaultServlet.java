@@ -38,9 +38,8 @@ public class DefaultServlet extends HttpServlet {
 	  out.println("<html>");
 	  out.println("<body>");
 	  
-	  out.println("<p>");
-	  out.println("siidesh hk");
-	  out.println("</p>");
+	
+	  out.println("<p>siddesh h k</p>");
 	  out.println("</body>");
 	  
 	  out.println("</html>");
