@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class Login
@@ -32,6 +33,14 @@ public class Login extends HttpServlet {
 		String psw=request.getParameter("psw");
 		
 		System.out.println(" ==="+name+"===="+psw);
+		  HttpSession session = request.getSession(); // Unique per user/browser
+	        session.setAttribute("username", name);
+	       // response.sendRedirect("login.jsp");
+	        response.setContentType("text/html");
+	        response.getWriter().println("<h2>Welcome " + name +session.getId()+ "</h2>");
+	        
+	        response.getWriter().println("<a href="+"welcome"+">Welcome " + name + "</h2>");
+		
 	}
 
 }

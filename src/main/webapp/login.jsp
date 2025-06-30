@@ -23,7 +23,6 @@ public int print(){
 
 
 %>
-<p  > inc : <%=a %>   </p>
 <button  <%=print() %>>button</button>
 <br>
 <form action="Login" method="post">
@@ -37,5 +36,6 @@ public int print(){
 <input type="submit"  value="Login">
 
 </form>
+<label><%=request.getAttribute("siddu") %></label>
 </body>
 </html>

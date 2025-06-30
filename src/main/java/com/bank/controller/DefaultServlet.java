@@ -31,20 +31,23 @@ public class DefaultServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.sendRedirect("login.jsp");
 		//
-		  response.setContentType("text/html");
-		//request.getRequestDispatcher("login.jsp").forward(request, response);
-	  PrintWriter out=  response.getWriter();
-	  
-	  out.println("<html>");
-	  out.println("<body>");
-	  
-	
-	  out.println("<p>siddesh h k</p>");
-	  out.println("</body>");
-	  
-	  out.println("</html>");
-	  
-	 System.out.println("siddesh h k ");
+		//  response.setContentType("text/html");
+		request.setAttribute("siddu", "siddu123");
+		request.getRequestDispatcher("login.jsp").forward(request, response);
+		
+		//response.sendRedirect("login.jsp");
+//	  PrintWriter out=  response.getWriter();
+//	  
+//	  out.println("<html>");
+//	  out.println("<body>");
+//	  
+//	
+//	  out.println("<p>siddesh h k</p>");
+//	  out.println("</body>");
+//	  
+//	  out.println("</html>");
+//	  
+//	 System.out.println("siddesh h k ");
 	  
 	}
 
